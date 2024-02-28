@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace NumbersService
 {
-    class Program
+    class NumbersService
     {
         static void Main(string[] args)
         {
@@ -15,16 +15,16 @@ namespace NumbersService
                 switch (taskNumber)
                 {
                     case 1:
-                        var task1Data = new Dictionary<int, string>()
+                        var firstData = new Dictionary<int, string>()
                         {
                             {15 , "fizz - buzz"},
                             {3 , "fizz"},
                             {5 , "buzz"},
                         };
-                        Task(task1Data, 1);
+                        Task(firstData, 1);
                         break;
                     case 2:
-                        var task2Data = new Dictionary<int, string>()
+                        var secoundData = new Dictionary<int, string>()
                         {
                             {15 , "fizz - buzz"},
                             {3 , "fizz"},
@@ -32,10 +32,10 @@ namespace NumbersService
                             {4 , "muzz"},
                             {7 , "guzz"},
                         };
-                        Task(task2Data, 2);
+                        Task(secoundData, 2);
                         break;
                     case 3:
-                        var task3Data = new Dictionary<int, string>()
+                        var thirdData = new Dictionary<int, string>()
                         {
                             {15 , "good - boy"},
                             {3 , "dog"},
@@ -43,7 +43,7 @@ namespace NumbersService
                             {7 , "guzz"},
                             {5 , "cat"},
                         };
-                        Task(task3Data, 3);
+                        Task(thirdData, 3);
                         break;
                 }
             }
@@ -91,10 +91,10 @@ namespace NumbersService
                 {
                     programmOutput.Add(number.ToString());
                 }
-
             }
             string outputString = string.Join(' ', programmOutput);
             Console.WriteLine(outputString);
+            Console.ReadKey();
         }
     }
 }
