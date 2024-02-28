@@ -69,7 +69,6 @@ namespace NumbersService
                 {
                     continue;
                 }
-
                 foreach (var valuePair in values)
                 {
                     if ((number % valuePair.Key == 0))
