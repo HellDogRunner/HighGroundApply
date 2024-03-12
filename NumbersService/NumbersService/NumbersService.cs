@@ -45,6 +45,9 @@ namespace NumbersService
                         };
                         Task(thirdData, 3);
                         break;
+                    default:
+                        Console.WriteLine("Вы неверно указали номер задания");
+                        break;
                 }
             }
             else
